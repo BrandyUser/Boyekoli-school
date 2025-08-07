@@ -6,6 +6,7 @@
 
 ## Fonctionnalités principales
 
+- Documentation
 - Questions/Quiz à choix multiple
 - Suivi des scores en temps réel
 - Classement des meilleurs joueurs
