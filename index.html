@@ -14,14 +14,14 @@
 <body class="bg-[#0A1434] text-white">
 
   <!-- HEADER -->
-  <header class="flex justify-between items-center text-center border-b border-white/10 bg-[#0A1434] text-sky-300 p-4 fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-gradient-to-l from-sky-950 to-indigo-900">
+  <header class="flex justify-between items-center text-center border-b border-white/20 text-sky-300 p-4 fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-gradient-to-l">
     <div class="flex">
       <div class="items">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="60" viewBox="0 0 512 512"><path fill="#0889ff" d="M256 89.61L22.486 177.18L256 293.937l111.22-55.61l-104.337-31.9A16 16 0 0 1 256 208a16 16 0 0 1-16-16a16 16 0 0 1 16-16l-2.646 8.602l18.537 5.703l.008.056l27.354 8.365L455 246.645v12.146a16 16 0 0 0-7 13.21a16 16 0 0 0 7.293 13.406C448.01 312.932 448 375.383 448 400c16 10.395 16 10.775 32 0c0-24.614-.008-87.053-7.29-114.584A16 16 0 0 0 480 272a16 16 0 0 0-7-13.227v-25.42L413.676 215.1l75.838-37.92zM119.623 249L106.5 327.74c26.175 3.423 57.486 18.637 86.27 36.627c16.37 10.232 31.703 21.463 44.156 32.36c7.612 6.66 13.977 13.05 19.074 19.337c5.097-6.288 11.462-12.677 19.074-19.337c12.453-10.897 27.785-22.128 44.156-32.36c28.784-17.99 60.095-33.204 86.27-36.627L392.375 249h-6.25L256 314.063L125.873 249z" stroke-width="13" stroke="#0889ff"/></svg>
       </div>
-    <div class="border-l max-w-4xl border-white text-left">
+    <div class="border-l mx-3 pl-3 max-w-4xl border-white text-left">
       <h1 class="lg:text-4xl text-3xl text-blue-400 font-bold "> Educaccess</h1>
-    <p class="text-white/80 mt-1 sm:text-sm">Rester connecter à l'école</p>
+      <p class="text-white/80 mt-1 sm:text-sm">Rester connecter à l'école</p>
     </div>
     </div>
 
@@ -31,51 +31,88 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="top-20 relative flex flex-col items-center justify-center text-center px-4  m-10 h-[80vh] bg-blue-900 rounded-2xl">
-    <img src="images/enfa.jpg" class="absolute inset-0 w-full h-full object-cover rounded-2xl bg-gradient-to-br from-black-950 to-white-800 " alt="École">
-    <div class="relative z-10 text-end lg:border-r ">
-      <h2 class="lg:text-5xl text-4xl font-bold mb-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 bg-clip-text text-transparent shadow-lg">Le programme d'appuis scolaire Boyekoli</h2> 
-      <p class="mb-6 text-white/80 text-2xl bg-gradiant-l from-sky-900 to-blue-900">En route vers les écoles plus digitalisées, plus inclusive et plus impactantes !</p>
-     
+<section class="top-20 relative flex flex-col items-center justify-center text-center px-4 m-10 h-[80vh] rounded-2xl overflow-hidden">
+
+  <!-- BACKGROUND SLIDES -->
+  <div class="absolute inset-0 w-full h-full rounded-2xl">
+    <div class="slideshow absolute inset-0 w-full h-full rounded-2xl">
+      <!-- Slide 1 -->
+      <div class="slide absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000">
+        <img src="images/enfa.jpg" class="w-full h-full object-cover rounded-2xl" alt="École 1">
+        
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000">
+        <img src="images/istockphoto-146834325-612x612.jpg" class="w-full h-full object-cover rounded-2xl" alt="École 2">
+        
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000">
+        <img src="images/istockphoto-2150086729-612x612.jpg" class="w-full h-full object-cover rounded-2xl" alt="École 3">
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <p class="text-white text-2xl font-bold">Un programme inclusif et impactant</p>
+        </div>
+      </div>
     </div>
-    <div class=" items-center grid lg:flex justify-center gap-4">
-      <a href="https://forms.gle/votre-lien-ecole" target="_blank" class="bg-[#8A2862] w-60 text-white px-6 py-3 rounded-full shadow hover:bg-blue-500 transition">
-         Inscrire mon école
-      </a>
-    <a href="https://forms.gle/votre-lien-partenaire" target="_blank" class="border border-sky-500 border-2 text-white w-60 text-black font-medium px-6 py-3 rounded-full shadow hover:bg-[#1E90FF] transition">
-       Devenir partenaire
+  </div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 text-end border-r-4 pr-3">
+    <h2 class="lg:text-5xl text-4xl font-bold mb-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 bg-clip-text text-transparent shadow-lg">
+      Le programme d'appuis scolaire Boyekoli
+    </h2>
+    <p class="text-2xl font-bold text-white">
+      En route vers les écoles plus digitalisées, plus inclusives et plus impactantes !
+    </p>
+  </div>
+
+  <div class="items-center grid lg:flex justify-center gap-4 relative p-20 z-10">
+    <a href="https://forms.gle/votre-lien-ecole" target="_blank"
+      class="bg-[#8A2862] w-60 text-white px-6 py-3 rounded-full shadow hover:bg-pink-500 transition">
+      Inscrire mon école
     </a>
-    </div>
-  </section>
+    <a href="https://forms.gle/votre-lien-partenaire" target="_blank"
+      class="border border-sky-500 border-2 text-white w-60 font-medium px-6 py-3 rounded-full shadow hover:bg-[#1E90FF] transition">
+      Devenir partenaire
+    </a>
+  </div>
+</section>
+ 
   <!--Qui sont nos cibles ?-->
   <section class="bg-sky-500 h-auto w-full grid content-center gap-2 bg-gradient-to-l from-sky-950 to-indigo-900">
-    <h1 class="pt-20 text-center text-5xl font-bold">Educaccess pour une éducation inclusive et une IA éthique</h1>
+    <h1 class="pt-20 text-center text-4xl font-bold ">Pourquoi le programme Boyekoli?</h1>
     <div class="lg:flex grid justify-center content-center items-center">
-      <div class="bg-sky-100/50 backdrop-blur-lg shadow-lg flex-row h-auto w-80 m-20 rounded-xl shadow-lg ">
-        <img src="/images/enfa.jpg" alt="élève">
-        <div class="border-l-2 m-2">
-          <h2 class="text-2xl font-bold">Accessible pour élèves</h2>
-          <p class="text-indigo-700">Grâce au programme boyekoli, chaque enfant a droit à l'éducation </p>
+      <div class="bg-sky-100/50 backdrop-blur-lg shadow-lg flex-row h-auto w-80 m-20 rounded-xl shadow-lg">
+        <img src="/images/enfa.jpg" alt="élève" class="rounded-t-lg">
+        <div class="border-l-4 m-2 pl-3">
+          <h2 class="text-2xl font-bold">Pour les écoles</h2>
+          <p class="text-indigo-700">Beneficiez d’une ouverture unique vers l’avenir de l’éducation. Grâce aux ateliers sur
+             l’intelligence artificielle et aux concours et valoriser l'école comme pionniers de l’innovation, renforcent l’attractivité de leur programme et motivent leurs enseignants à i
+            ntégrer de nouvelles méthodes pédagogiques.</p>
         </div>
         <div class="bg-indigo-800 h-10 w-70 m-2 rounded-lg text-center">
           <h2>Télecharger</h2>
         </div>
     </div>
     <div class="bg-sky-100/50 flex-row h-auto w-80 m-20 rounded-xl shadow-lg">
-        <img src="/images/enfa.jpg" alt="élève">
-        <div class="border-l-2 m-2">
-          <h2 class="text-2xl font-bold">Accessible pour élèves</h2>
-          <p class="text-indigo-700">Grâce au programme boyekoli, chaque enfant a droit à l'éducation </p>
+        <img src="/images/enfa.jpg" alt="élève" class="rounded-t-lg">
+        <div class="border-l-4 m-2 pl-3">
+          <h2 class="text-2xl font-bold">Pour les élèves</h2>
+          <p class="text-indigo-700">Chaque élève vit une expérience éducative transformante : comprendre et utiliser l’IA, développer sa créativité à travers les concours et renforcer son esprit critique. Ces activités ouvrent la porte à des opportunités concrètes : 
+            stages, orientation éclairée, voire compétitions internationales.</p>
         </div>
         <div class="bg-indigo-800 h-10 w-70 m-2 rounded-lg text-center">
           <h2>Télecharger</h2>
         </div>
     </div>
     <div class="bg-sky-100/50 flex-row h-auto w-80 m-20 rounded-xl shadow-lg">
-        <img src="/images/enfa.jpg" alt="élève">
-        <div class="border-l-2 m-2">
-          <h2 class="text-2xl font-bold">Accessible pour élèves</h2>
-          <p class="text-indigo-700">Grâce au programme boyekoli, chaque enfant a droit à l'éducation </p>
+        <img src="/images/enfa.jpg" alt="élève" class="rounded-t-lg">
+        <div class="border-l-4 m-2 pl-3">
+          <h2 class="text-2xl font-bold">Pour les parents</h2>
+          <p class="text-indigo-700">Decouvrez un environnement éducatif qui prépare réellement vos enfants aux métiers de demain. Les ateliers offrent une garantie de suivi pédagogique moderne, et les concours stimulent les talents cachés des jeunes. Voyez comment votre investissement 
+            dans l’éducation porte des fruits tangibles.</p>
         </div>
         <div class="bg-indigo-800 h-10 w-70 m-2 rounded-lg text-center">
           <h2>Télecharger</h2>
@@ -84,18 +121,73 @@
     </div>
   </section>
 
+  <section class="py-16 bg-gray-100" id="calendar">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10">📅 Calendrier du Programme</h2>
+    <div class="space-y-8">
+      
+      <!-- Event -->
+      <div class="bg-white shadow-md rounded-xl p-6 flex items-start gap-4">
+        <div class="text-indigo-600 font-bold text-xl">15 Sept.</div>
+        <div>
+          <h3 class="text-lg font-semibold">Lancement officiel</h3>
+          <p class="text-gray-600">Ouverture du programme Boyekoli et début des inscriptions.</p>
+        </div>
+      </div>
+      
+      <!-- Event -->
+      <div class="bg-white shadow-md rounded-xl p-6 flex items-start gap-4">
+        <div class="text-indigo-600 font-bold text-xl">20–30 Sept.</div>
+        <div>
+          <h3 class="text-lg font-semibold">Sensibilisation dans les écoles</h3>
+          <p class="text-gray-600">Sessions d’introduction sur l’IA pour enseignants, élèves et parents.</p>
+        </div>
+      </div>
+      
+      <!-- Event -->
+      <div class="bg-white shadow-md rounded-xl p-6 flex items-start gap-4">
+        <div class="text-indigo-600 font-bold text-xl">1–15 Oct.</div>
+        <div>
+          <h3 class="text-lg font-semibold">Ateliers pratiques</h3>
+          <p class="text-gray-600">Manipulation d’outils d’IA et initiation au codage.</p>
+        </div>
+      </div>
+
+      <!-- Event -->
+      <div class="bg-white shadow-md rounded-xl p-6 flex items-start gap-4">
+        <div class="text-indigo-600 font-bold text-xl">20 Oct.–5 Nov.</div>
+        <div>
+          <h3 class="text-lg font-semibold">Concours IA</h3>
+          <p class="text-gray-600">Défis créatifs et présentation de projets par les élèves.</p>
+        </div>
+      </div>
+
+      <!-- Event -->
+      <div class="bg-white shadow-md rounded-xl p-6 flex items-start gap-4">
+        <div class="text-indigo-600 font-bold text-xl">10 Nov.</div>
+        <div>
+          <h3 class="text-lg font-semibold">Grande finale & remise des prix</h3>
+          <p class="text-gray-600">Sélection des lauréats et valorisation des projets gagnants.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
   <!--IMPACT-->
   <section class="grid gap-4 lg:justify-center">
-    <h2 class="text-4xl font-bold text-center text-sky-300 py-4">NOTRE IMPACT</h2>
+    <h2 class="text-4xl font-bold text-center text-sky-300 py-4">NOTRE MISSION</h2>
     <!--Impact():écoles-->
     <div class="grid gap-10 lg:flex mx-8 content-center">
       <div class="grid lg:flex-[50%] gap-10 bg-indigo-800 rounded-2xl text-center">
-        <div class="flex lg:flex-[50%] m-4 text-center gap-10 items-center justify-center p-4">
+        <div class="grid lg:flex lg:flex-[50%] m-4 text-center gap-10 items-center justify-center p-4">
         <div class="bg-sky-950 rounded-full h-40 w-40 lg:h-100 lg: content-center text-center hover:bg-blue-900">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="120" viewBox="0 0 14 14"><g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#2859c5" d="M4.746 2.583a1.848 1.848 0 1 1-3.695 0a1.848 1.848 0 0 1 3.695 0m2.32 3.096a1.027 1.027 0 0 1 0 2.055h-2.16l-.752 5.404a1 1 0 0 1-.99.862H2.66a1 1 0 0 1-.994-.893l-.282-2.61h-.172a.964.964 0 0 1-.963-.963V8.328a2.65 2.65 0 0 1 2.65-2.648z" stroke-width="0.5" stroke="#2859c5"/><path fill="#8fbffa" d="M7.259 8.976h5.143c.745 0 1.348-.604 1.348-1.349V1.35c0-.746-.604-1.35-1.348-1.35H4.608a3.095 3.095 0 0 1 .778 4.43h1.68a2.277 2.277 0 0 1 .193 4.546" stroke-width="0.5" stroke="#8fbffa"/></g></svg>
         </div>
-        <div class="text-left border-l border-white">
-        <h1 class="text-4xl font-bold">500+</h1>
+        <div class="text-center lg:text-left lg:border-l-4 border-white pl-3">
+        <h1 class="text-8xl font-bold" data-target="500">0</h1>
         <h1 class="text-2xl text-sky-500 font-bold">ECOLES</h1>
       </div>
       </div>
@@ -136,9 +228,10 @@
 
       <!--Impact():eleves-->
       <div class="grid lg:flex-[50%] bg-indigo-800 rounded-2xl">
-        <div class="flex items-center justify-center m-4 gap-10">
-        <div class="border-r text-end">
-        <h1 class=" text-4xl font-bold ">+1000</h1><h1 class="text-sky-500 font-bold text-2xl">ELEVES</h1>
+        <div class="grid text-center lg:flex items-center justify-center m-4 gap-10">
+        <div class="lg:border-r-4 text-center lg:text-end pr-3 text-center">
+        <h1 class=" text-8xl font-bold " data-target="1000">+0</h1>
+        <h1 class="text-sky-500 font-bold text-2xl">ELEVES</h1>
         </div>
 
         <div class="bg-sky-950 rounded-full h-40 w-40 content-center text-center hover:bg-blue-900">
@@ -180,17 +273,17 @@
     </section>
 
     <!-- DEUXIÈME SECTION BOUTONS -->
-  <div class="py-4 items-center flex md:flex-row justify-center gap-4 px-4">
+  <div class="py-4 items-center text-center flex md:flex-row justify-center gap-4 px-4">
       <a href="https://forms.gle/votre-lien-ecole" target="_blank" class="bg-[#8A2862] w-60 text-white px-6 py-3 rounded-full shadow hover:bg-pink-500 transition">
          Inscrire mon école
       </a>
-    <a href="https://forms.gle/votre-lien-partenaire" target="_blank" class="border border-sky-500 border-2 text-white w-60 text-black font-medium px-6 py-3 rounded-full shadow hover:bg-[#1E90FF] transition">
+    <a href="https://forms.gle/votre-lien-partenaire" target="_blank" class="border border-sky-500 border-2 text-white w-60 font-medium px-6 py-3 rounded-full shadow hover:bg-[#1E90FF] transition">
        Devenir partenaire
     </a>
     </div>
 
      <!-- A PROPOS -->
-  <section class="py-8 px-6 bg-sky-500">
+  <section class="py-8 px-6 bg-sky-500 ">
   <h2 class="text-3xl font-bold p-4 text-left">Pour la petite histoire</h2>
 
   <!-- Conteneur scrollable -->
@@ -259,6 +352,54 @@
   animation: slide 20s linear infinite; /* vitesse ajustable */
 }
 </style>
+<script>
+  // Script du slideshow
+  let slides = document.querySelectorAll(".slideshow .slide");
+  let current = 0;
+
+  function showNextSlide() {
+    slides[current].classList.remove("opacity-100");
+    slides[current].classList.add("opacity-0");
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.remove("opacity-0");
+    slides[current].classList.add("opacity-100");
+  }
+
+  setInterval(showNextSlide, 5000); // Change d’image toutes les 5s
+</script>
+
+<script>
+  const counters = document.querySelectorAll('[data-target]');
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const increment = target / 400; // plus grand = plus rapide
+
+    if(count < target){
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount,20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  // Déclencher le compteur seulement quand l'élément est visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        updateCount();
+        observer.unobserve(counter);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(counter);
+});
+</script>
 
   <!-- FOOTER -->
   <footer class="bg-[#0A1434] text-white p-4 text-center border-t border-white/10">
@@ -266,7 +407,7 @@
   </footer>
 
   <!-- BOUTON WHATSAPP FLOTTANT -->
-  <a href="https://wa.me/243838451285" target="_blank" 
+  <a href="https://whatsapp.com/channel/0029VbB2rLNGzzKNaQZH5B01" target="_blank" 
      class="fixed bottom-5 right-5 bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8">
   </a>
