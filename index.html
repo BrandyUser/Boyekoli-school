@@ -14,13 +14,13 @@
 <body class="bg-[#0A1434] text-white">
 
   <!-- HEADER -->
-  <header class="flex justify-between items-center text-center border-b border-white/10 bg-[#0A1434] text-sky-300 p-4">
+  <header class="flex justify-between items-center text-center border-b border-white/10 bg-[#0A1434] text-sky-300 p-4 fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-gradient-to-l from-sky-950 to-indigo-900">
     <div class="flex">
       <div class="items">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="60" viewBox="0 0 512 512"><path fill="#0889ff" d="M256 89.61L22.486 177.18L256 293.937l111.22-55.61l-104.337-31.9A16 16 0 0 1 256 208a16 16 0 0 1-16-16a16 16 0 0 1 16-16l-2.646 8.602l18.537 5.703l.008.056l27.354 8.365L455 246.645v12.146a16 16 0 0 0-7 13.21a16 16 0 0 0 7.293 13.406C448.01 312.932 448 375.383 448 400c16 10.395 16 10.775 32 0c0-24.614-.008-87.053-7.29-114.584A16 16 0 0 0 480 272a16 16 0 0 0-7-13.227v-25.42L413.676 215.1l75.838-37.92zM119.623 249L106.5 327.74c26.175 3.423 57.486 18.637 86.27 36.627c16.37 10.232 31.703 21.463 44.156 32.36c7.612 6.66 13.977 13.05 19.074 19.337c5.097-6.288 11.462-12.677 19.074-19.337c12.453-10.897 27.785-22.128 44.156-32.36c28.784-17.99 60.095-33.204 86.27-36.627L392.375 249h-6.25L256 314.063L125.873 249z" stroke-width="13" stroke="#0889ff"/></svg>
       </div>
     <div class="border-l max-w-4xl border-white text-left">
-      <h1 class="lg:text-4xl text-3xl font-bold "> Educaccess</h1>
+      <h1 class="lg:text-4xl text-3xl text-blue-400 font-bold "> Educaccess</h1>
     <p class="text-white/80 mt-1 sm:text-sm">Rester connecter à l'école</p>
     </div>
     </div>
@@ -31,11 +31,11 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative flex flex-col items-center justify-center text-center px-4  m-10 h-[80vh] bg-blue-900 rounded-2xl">
-    <img src="images/enfa.jpg" class="absolute inset-0 w-full h-full object-cover opacity-25 rounded-2xl bg-gradient-to-br from-blue-950 to-blue-800 " alt="École">
-    <div class="relative z-10 max-w-lg text-end lg:border-r ">
-      <h2 class="text-4xl font-bold mb-2 mx-4">Le programme d'appuis scolaire Boyekoli</h2> 
-      <p class="mb-6 text-white/80">En route vers les écoles plus digitalisées et .</p>
+  <section class="top-20 relative flex flex-col items-center justify-center text-center px-4  m-10 h-[80vh] bg-blue-900 rounded-2xl">
+    <img src="images/enfa.jpg" class="absolute inset-0 w-full h-full object-cover rounded-2xl bg-gradient-to-br from-black-950 to-white-800 " alt="École">
+    <div class="relative z-10 text-end lg:border-r ">
+      <h2 class="lg:text-5xl text-4xl font-bold mb-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 bg-clip-text text-transparent shadow-lg">Le programme d'appuis scolaire Boyekoli</h2> 
+      <p class="mb-6 text-white/80 text-2xl bg-gradiant-l from-sky-900 to-blue-900">En route vers les écoles plus digitalisées, plus inclusive et plus impactantes !</p>
      
     </div>
     <div class=" items-center grid lg:flex justify-center gap-4">
@@ -47,10 +47,41 @@
     </a>
     </div>
   </section>
-
-  <!-- PREMIÈRE SECTION BOUTONS -->
-  <section >
-     
+  <!--Qui sont nos cibles ?-->
+  <section class="bg-sky-500 h-auto w-full grid content-center gap-2 bg-gradient-to-l from-sky-950 to-indigo-900">
+    <h1 class="pt-20 text-center text-5xl font-bold">Educaccess pour une éducation inclusive et une IA éthique</h1>
+    <div class="lg:flex grid justify-center content-center items-center">
+      <div class="bg-sky-100/50 backdrop-blur-lg shadow-lg flex-row h-auto w-80 m-20 rounded-xl shadow-lg ">
+        <img src="/images/enfa.jpg" alt="élève">
+        <div class="border-l-2 m-2">
+          <h2 class="text-2xl font-bold">Accessible pour élèves</h2>
+          <p class="text-indigo-700">Grâce au programme boyekoli, chaque enfant a droit à l'éducation </p>
+        </div>
+        <div class="bg-indigo-800 h-10 w-70 m-2 rounded-lg text-center">
+          <h2>Télecharger</h2>
+        </div>
+    </div>
+    <div class="bg-sky-100/50 flex-row h-auto w-80 m-20 rounded-xl shadow-lg">
+        <img src="/images/enfa.jpg" alt="élève">
+        <div class="border-l-2 m-2">
+          <h2 class="text-2xl font-bold">Accessible pour élèves</h2>
+          <p class="text-indigo-700">Grâce au programme boyekoli, chaque enfant a droit à l'éducation </p>
+        </div>
+        <div class="bg-indigo-800 h-10 w-70 m-2 rounded-lg text-center">
+          <h2>Télecharger</h2>
+        </div>
+    </div>
+    <div class="bg-sky-100/50 flex-row h-auto w-80 m-20 rounded-xl shadow-lg">
+        <img src="/images/enfa.jpg" alt="élève">
+        <div class="border-l-2 m-2">
+          <h2 class="text-2xl font-bold">Accessible pour élèves</h2>
+          <p class="text-indigo-700">Grâce au programme boyekoli, chaque enfant a droit à l'éducation </p>
+        </div>
+        <div class="bg-indigo-800 h-10 w-70 m-2 rounded-lg text-center">
+          <h2>Télecharger</h2>
+        </div>
+    </div>
+    </div>
   </section>
 
   <!--IMPACT-->
@@ -58,9 +89,9 @@
     <h2 class="text-4xl font-bold text-center text-sky-300 py-4">NOTRE IMPACT</h2>
     <!--Impact():écoles-->
     <div class="grid gap-10 lg:flex mx-8 content-center">
-      <div class="grid lg:flex-[50%] gap-10 bg-indigo-950 rounded-2xl text-center">
+      <div class="grid lg:flex-[50%] gap-10 bg-indigo-800 rounded-2xl text-center">
         <div class="flex lg:flex-[50%] m-4 text-center gap-10 items-center justify-center p-4">
-        <div class="bg-sky-950 rounded-full h-40 w-40 lg:h-100 lg: content-center text-center">
+        <div class="bg-sky-950 rounded-full h-40 w-40 lg:h-100 lg: content-center text-center hover:bg-blue-900">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="120" viewBox="0 0 14 14"><g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#2859c5" d="M4.746 2.583a1.848 1.848 0 1 1-3.695 0a1.848 1.848 0 0 1 3.695 0m2.32 3.096a1.027 1.027 0 0 1 0 2.055h-2.16l-.752 5.404a1 1 0 0 1-.99.862H2.66a1 1 0 0 1-.994-.893l-.282-2.61h-.172a.964.964 0 0 1-.963-.963V8.328a2.65 2.65 0 0 1 2.65-2.648z" stroke-width="0.5" stroke="#2859c5"/><path fill="#8fbffa" d="M7.259 8.976h5.143c.745 0 1.348-.604 1.348-1.349V1.35c0-.746-.604-1.35-1.348-1.35H4.608a3.095 3.095 0 0 1 .778 4.43h1.68a2.277 2.277 0 0 1 .193 4.546" stroke-width="0.5" stroke="#8fbffa"/></g></svg>
         </div>
         <div class="text-left border-l border-white">
@@ -75,7 +106,7 @@
         </p>
       <div class="flex gap-10 justify-center p-4">
           <div class="grid text-center">
-            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center">
+            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center hover:bg-blue-900">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 24 24">
             <g fill="none" fill-rule="evenodd" clip-rule="evenodd">
             <path fill="#8fbffa" d="M7 10v13h4V10zM5 23v-8.5H1V23zm8 0v-7h4v7zm6-10.5V23h4V12.5z"/><path fill="#2859c5" d="m9.916 3.65l-.85-.917l-.917.851l-7 6.5l1.702 1.832l6.084-5.65l5.649 6.085l.883.95l.917-.917l4-4L22 10l1-1V4h-5l-1 1l1.616 1.616L15.533 9.7z"/></g></svg>
@@ -85,7 +116,7 @@
           </div>
 
         <div class="grid text-center">
-          <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center">
+          <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center hover:bg-blue-900">
           <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 15 15"><path fill="#0866ff" d="M10 12h3v-1h-3z" stroke-width="0.5" stroke="#0866ff"/><path fill="#0866ff" fill-rule="evenodd" d="M9.5 0A1.5 1.5 0 0 0 8 1.5V3H1.5A1.5 1.5 0 0 0 0 4.5v6A1.5 1.5 0 0 0 1.5 12H6v2H4v1h9.5a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 13.5 0zM8.085 14H7v-2h1v1.5q.001.264.085.5M9.5 14h4a.5.5 0 0 0 .5-.5V6H9v7.5a.5.5 0 0 0 .5.5M9 5h5V1.5a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0-.5.5z" clip-rule="evenodd" stroke-width="0.5" stroke="#0866ff"/></svg>
         </div>
         <p>Accès aux</p>
@@ -93,7 +124,7 @@
         </div>
 
         <div class="grid text-center">
-          <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center">
+          <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center hover:bg-blue-900">
           <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 14 14"><g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#8fbffa" d="M11 4.814a.75.75 0 1 0 1.5-.06a50 50 0 0 0-.049-.971A2.65 2.65 0 0 0 9.96 1.29q-.749-.044-1.486-.065a.75.75 0 1 0-.044 1.5q.715.02 1.441.063a1.15 1.15 0 0 1 1.084 1.083q.028.474.047.943Zm-5.604 8.244a.75.75 0 0 0 .045-1.499a48 48 0 0 1-1.361-.061a1.15 1.15 0 0 1-1.084-1.084l-.023-.424a.75.75 0 0 0-1.498.076l.024.437a2.65 2.65 0 0 0 2.492 2.492q.708.043 1.405.063" stroke-width="0.5" stroke="#8fbffa"/><path fill="#2859c5" d="M3.68 4.031c1.013 0 1.582-.57 1.582-1.582S4.692.866 3.68.866s-1.583.57-1.583 1.583s.57 1.581 1.583 1.581Zm2.382 2.853C5.878 5.615 4.984 4.706 3.68 4.706s-2.198.91-2.382 2.178c-.04.273.188.498.464.498h3.836c.276 0 .504-.225.464-.498m6.64 5.676c-.185-1.268-1.079-2.177-2.382-2.177s-2.198.91-2.383 2.178c-.04.273.189.498.465.498h3.835c.276 0 .505-.225.465-.498Zm-.8-4.433c0 1.013-.57 1.583-1.582 1.583s-1.583-.57-1.583-1.583s.57-1.583 1.582-1.583s1.583.57 1.583 1.583" stroke-width="0.5" stroke="#2859c5"/></g></svg>
         </div>
         <p>Réseaux</p>
@@ -104,13 +135,13 @@
       </div>
 
       <!--Impact():eleves-->
-      <div class="grid lg:flex-[50%] bg-indigo-950 rounded-2xl">
+      <div class="grid lg:flex-[50%] bg-indigo-800 rounded-2xl">
         <div class="flex items-center justify-center m-4 gap-10">
         <div class="border-r text-end">
         <h1 class=" text-4xl font-bold ">+1000</h1><h1 class="text-sky-500 font-bold text-2xl">ELEVES</h1>
         </div>
 
-        <div class="bg-sky-950 rounded-full h-40 w-40 content-center text-center">
+        <div class="bg-sky-950 rounded-full h-40 w-40 content-center text-center hover:bg-blue-900">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 512 512"><path fill="#0889ff" d="M256 89.61L22.486 177.18L256 293.937l111.22-55.61l-104.337-31.9A16 16 0 0 1 256 208a16 16 0 0 1-16-16a16 16 0 0 1 16-16l-2.646 8.602l18.537 5.703l.008.056l27.354 8.365L455 246.645v12.146a16 16 0 0 0-7 13.21a16 16 0 0 0 7.293 13.406C448.01 312.932 448 375.383 448 400c16 10.395 16 10.775 32 0c0-24.614-.008-87.053-7.29-114.584A16 16 0 0 0 480 272a16 16 0 0 0-7-13.227v-25.42L413.676 215.1l75.838-37.92zM119.623 249L106.5 327.74c26.175 3.423 57.486 18.637 86.27 36.627c16.37 10.232 31.703 21.463 44.156 32.36c7.612 6.66 13.977 13.05 19.074 19.337c5.097-6.288 11.462-12.677 19.074-19.337c12.453-10.897 27.785-22.128 44.156-32.36c28.784-17.99 60.095-33.204 86.27-36.627L392.375 249h-6.25L256 314.063L125.873 249z" stroke-width="13" stroke="#0889ff"/></svg>
         </div>
 
@@ -122,20 +153,20 @@
 
         <div class="flex gap-10 justify-center p-4">
           <div class="grid text-center">
-            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center">
+            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center hover:bg-blue-900">
           <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 512 512"><path fill="#0889ff" d="M204.055 213.905q-18.12-5.28-34.61-9a146 146 0 0 1-6.78-44.33c0-65.61 42.17-118.8 94.19-118.8s94.15 53.14 94.15 118.76a146.3 146.3 0 0 1-6.16 42.32q-20.52 4.3-43.72 11.05c-22 6.42-39.79 12.78-48.56 16.05c-8.72-3.27-26.51-9.63-48.51-16.05m-127.95 84.94a55.16 55.16 0 1 0 55.16 55.15a55.16 55.16 0 0 0-55.16-55.15m359.79 0a55.16 55.16 0 1 0 55.16 55.15a55.16 55.16 0 0 0-55.15-55.15zm-71.15 55.15a71.24 71.24 0 0 1 42.26-65v-77.55c-64.49 0-154.44 35.64-154.44 35.64s-89.95-35.64-154.44-35.64v74.92a71.14 71.14 0 0 1 0 135.28v7c64.49 0 154.44 41.58 154.44 41.58s89.99-41.55 154.44-41.55v-9.68a71.24 71.24 0 0 1-42.26-65" stroke-width="13" stroke="#0889ff"/></svg>
         </div>
           <p>Cours</p>
           </div>
           <div class="grid text-center">
-            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center">
+            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center hover:bg-blue-900">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 24 24"><path fill="#2f80f4" d="M22 8.162v.073c0 .86 0 1.291-.207 1.643s-.584.561-1.336.98l-.793.44c.546-1.848.729-3.834.796-5.532l.01-.221l.002-.052c.651.226 1.017.395 1.245.711c.283.393.283.915.283 1.958m-20 0v.073c0 .86 0 1.291.207 1.643s.584.561 1.336.98l.794.44c-.547-1.848-.73-3.834-.797-5.532l-.01-.221l-.001-.052c-.652.226-1.018.395-1.246.711C2 6.597 2 7.12 2 8.162"/><path fill="#2f80f4" fill-rule="evenodd" d="M12 2c1.784 0 3.253.157 4.377.347c1.139.192 1.708.288 2.184.874s.45 1.219.4 2.485c-.172 4.349-1.11 9.78-6.211 10.26V19.5h1.43a1 1 0 0 1 .98.804l.19.946H18a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1 0-1.5h2.65l.19-.946a1 1 0 0 1 .98-.804h1.43v-3.534c-5.1-.48-6.038-5.912-6.21-10.26c-.051-1.266-.076-1.9.4-2.485c.475-.586 1.044-.682 2.183-.874A26.4 26.4 0 0 1 12 2m.952 4.199l-.098-.176C12.474 5.34 12.284 5 12 5s-.474.34-.854 1.023l-.098.176c-.108.194-.162.29-.246.354c-.085.064-.19.088-.4.135l-.19.044c-.738.167-1.107.25-1.195.532s.164.577.667 1.165l.13.152c.143.167.215.25.247.354s.021.215 0 .438l-.02.203c-.076.785-.114 1.178.115 1.352c.23.174.576.015 1.267-.303l.178-.082c.197-.09.295-.135.399-.135s.202.045.399.135l.178.082c.691.319 1.037.477 1.267.303s.191-.567.115-1.352l-.02-.203c-.021-.223-.032-.334 0-.438s.104-.187.247-.354l.13-.152c.503-.588.755-.882.667-1.165c-.088-.282-.457-.365-1.195-.532l-.19-.044c-.21-.047-.315-.07-.4-.135c-.084-.064-.138-.16-.246-.354" clip-rule="evenodd"/></svg>
           </div>
           <p>Evaluations</p>
           </div>
 
           <div class="grid text-center">
-            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center">
+            <div class="grid bg-blue-950 w-20 h-20 rounded-full items-center hover:bg-blue-900">
           <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 448 512"><path fill="#2f80f4" d="M241.3-13c-11.4-2.3-23.1-2.3-34.5 0L19.3 24.5C8.1 26.7 0 36.6 0 48c0 10.3 6.5 19.3 16 22.6V144L.3 222.6c-.2.9-.3 1.9-.3 2.9c0 8 6.5 14.6 14.6 14.6h34.9c8 0 14.6-6.5 14.6-14.6c0-1-.1-1.9-.3-2.9L48 144V77.3l48 9.6V144c0 70.7 57.3 128 128 128s128-57.3 128-128V86.9l76.7-15.3C439.9 69.3 448 59.4 448 48s-8.1-21.3-19.3-23.5zM224 224c-44.2 0-80-35.8-80-80h160c0 44.2-35.8 80-80 80m-103.9 96.1C58.7 348.3 16 410.3 16 482.3c0 16.4 13.3 29.7 29.7 29.7H200V366l-57.4-43c-6.5-4.9-15.2-6.2-22.6-2.8zM248 512h154.3c16.4 0 29.7-13.3 29.7-29.7c0-72-42.7-134-104.1-162.1c-7.4-3.4-16.1-2.1-22.6 2.8l-57.4 43v146z" stroke-width="13" stroke="#2f80f4"/></svg>        
         </div>
         <p>Diplômes</p>
@@ -150,7 +181,7 @@
 
     <!-- DEUXIÈME SECTION BOUTONS -->
   <div class="py-4 items-center flex md:flex-row justify-center gap-4 px-4">
-      <a href="https://forms.gle/votre-lien-ecole" target="_blank" class="bg-[#8A2862] w-60 text-white px-6 py-3 rounded-full shadow hover:bg-blue-500 transition">
+      <a href="https://forms.gle/votre-lien-ecole" target="_blank" class="bg-[#8A2862] w-60 text-white px-6 py-3 rounded-full shadow hover:bg-pink-500 transition">
          Inscrire mon école
       </a>
     <a href="https://forms.gle/votre-lien-partenaire" target="_blank" class="border border-sky-500 border-2 text-white w-60 text-black font-medium px-6 py-3 rounded-full shadow hover:bg-[#1E90FF] transition">
@@ -159,29 +190,75 @@
     </div>
 
      <!-- A PROPOS -->
-  <section class="py-8 px-6  bg-sky-500"> 
-    <h2 class="text-3xl font-bold p-4 text-left">Pour la petite histoire</h2>
-    <div class="lg:flex grid gap-10">
-      <img src="/images/istockphoto-2150086729-612x612.jpg" alt="Bilembo" class="bg-blue-500 rounded-lg w-100 h-80">
-    <p class="text-white/80 leading-relaxed">
-      En 2023 
-    </p>
-    </div>
-  </section>
+  <section class="py-8 px-6 bg-sky-500">
+  <h2 class="text-3xl font-bold p-4 text-left">Pour la petite histoire</h2>
 
-  <!-- CARROUSEL -->
-  <section class="py-8 bg-[#0A1434]">
-    <h2 class="text-center text-xl text-sky-500 font-semibold mb-6">NOS PARTENAIRES</h2>
-    <div class="overflow-hidden w-full">
-      <div class="flex animate-[slide_100   uuè_infinite] w-[200%] gap-6 object-cover w-80 h-80">
-        <img src="/images/ambassade de la jeunesse.jpg" class="w-1/3 object-cover" alt="École 1">
-        <img src="/images/F.Vodacom.jpg" class="w-1/3 object-cover" alt="Partenaire 1">
-        <img src="/images/kadea-acdemy.png" class="w-1/3 object-cover" alt="École 2">
-      </div>
+  <!-- Conteneur scrollable -->
+  <div class="h-96 overflow-y-auto space-y-6 pr-2">
+    <!-- Témoignage 1 -->
+    <div class="grid lg:flex lg:flex-rows items-center gap-8 bg-sky-300/50 p-4 rounded-xl">
+      <img src="/images/istockphoto-2150086729-612x612.jpg" 
+           alt="Bilembo" 
+           class="rounded-lg flex-[30%] h-60 object-cover">
+      <p class="text-white/80 mt-4 leading-relaxed flex-[70%]">
+        En 2023, Bilembo Lab a été lancé avec la mission d’inspirer et d’éduquer...
+      </p>
     </div>
-  </section>
 
+    <!-- Témoignage 2 -->
+    <div class="grid lg:flex lg:flex-rows items-center gap-8 bg-sky-300/50 p-4 rounded-xl">
+      <p class="text-white/80 mt-4 leading-relaxed flex-[30%]">
+        Les élèves découvrent la science de manière ludique, en reliant théorie et pratique...
+      </p>
+      <img src="/images/istockphoto-487506245-612x612.jpg" 
+           alt="Témoignage" 
+           class="rounded-lg flex-[70%] h-60 object-cover">
+      
+    </div>
+
+    <!-- Témoignage 3 -->
+    <div class="grid lg:flex lg:flex-rows items-center gap-8 bg-sky-300/50 p-4 rounded-xl">
+      <img src="/images/istockphoto-156236362-612x612.jpg" 
+           alt="Témoignage" 
+           class="rounded-lg flex-[30%] h-60 object-cover">
+      <p class="text-white/80 mt-4 leading-relaxed flex-[70%]">
+        Les enseignants participent aussi activement et témoignent d’un vrai impact pédagogique...
+      </p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- CARROUSEL PARTENAIRES -->
+<section class="bg-[#0A1434]">
+  <h2 class="text-4xl font-bold text-center text-sky-300 py-4">NOS PARTENAIRES</h2>
   
+  <div class="overflow-hidden w-full">
+    <div class="flex animate-slide gap-6">
+      <!-- On duplique les logos pour un scroll infini -->
+      <img src="/images/ambassade de la jeunesse.jpg" class="w-100 h-80 object-contain rounded-xl" alt="Partenaire 1">
+      <img src="/images/F.Vodacom.jpg" class="w-100 h-80 object-contain rounded-xl" alt="Partenaire 2">
+      <img src="/images/kadea-acdemy.png" class="w-100 h-80 object-contain rounded-xl" alt="Partenaire 3">
+      <img src="/images/ambassade de la jeunesse.jpg" class="w-100 h-80 object-contain rounded-xl" alt="Partenaire 1 bis">
+      <img src="/images/F.Vodacom.jpg" class="w-100 h-80 object-contain rounded-xl" alt="Partenaire 2 bis">
+      <img src="/images/kadea-acdemy.png" class="w-100 h-80 object-contain rounded-xl" alt="Partenaire 3 bis">
+    </div>
+  </div>
+</section>
+
+<!-- Ajoute ce style dans ton global.css ou tailwind.config.css -->
+<style>
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* on décale la moitié car on a dupliqué */
+}
+
+.animate-slide {
+  display: flex;
+  width: 200%; /* pour supporter le scroll infini */
+  animation: slide 20s linear infinite; /* vitesse ajustable */
+}
+</style>
 
   <!-- FOOTER -->
   <footer class="bg-[#0A1434] text-white p-4 text-center border-t border-white/10">
@@ -194,14 +271,5 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8">
   </a>
 
-  <!-- Animation carrousel -->
-  <style>
-    @keyframes slide {
-      0% { transform: translateX(0%); }
-      33% { transform: translateX(-100%); }
-      66% { transform: translateX(-200%); }
-      100% { transform: translateX(0%); }
-    }
-  </style>
 </body>
 </html>
