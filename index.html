@@ -170,7 +170,6 @@
           <p class="text-gray-600">Sélection des lauréats et valorisation des projets gagnants.</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -282,10 +281,17 @@
     </a>
     </div>
 
+    <!-- Donut Chart -->
+
+
      <!-- A PROPOS -->
   <section class="py-8 px-6 bg-sky-500 ">
-  <h2 class="text-3xl font-bold p-4 text-left">Pour la petite histoire</h2>
-
+  <h2 class="text-3xl font-bold p-4 text-left">NOTRE IMPACT</h2>
+    <div class="lg:w-1/2 bg-blur-900 p-6 rounded-2xl shadow-lg text-white flex">
+  <canvas id="impactDonutChart" width="400" height="400"></canvas>
+  <img src="/images/enfant.jpg" alt="illustration" class="rounded-xl opacity-50">
+  <h1 class="relative">Nous apportons le numérique partout où l'éducation l'exige</h1>
+</div>
   <!-- Conteneur scrollable -->
   <div class="h-96 overflow-y-auto space-y-6 pr-2">
     <!-- Témoignage 1 -->
@@ -399,6 +405,55 @@ counters.forEach(counter => {
 
   observer.observe(counter);
 });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('impactDonutChart').getContext('2d');
+
+const data = {
+    labels: ['Écoles', 'Élèves', 'Parents'],
+    datasets: [{
+        data: [500, 1000, 1500], // Remplace par tes chiffres
+        backgroundColor: ['#FF6384', '#0A1434', '#FFCE56'],
+        hoverOffset: 20,
+        borderWidth: 0
+    }]
+};
+
+const config = {
+    type: 'doughnut',
+    data: data,
+    options: {
+        responsive: true,
+        cutout: '70%', // Cercle intérieur pour l'effet donut
+        plugins: {
+            legend: {
+                position: 'right',
+                labels: {
+                    color: 'white',
+                    font: { size: 16 }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                        const value = context.parsed;
+                        const percentage = ((value / total) * 100).toFixed(1);
+                        return `${context.label}: ${value} (${percentage}%)`;
+                    }
+                }
+            }
+        },
+        animation: {
+            animateRotate: true,
+            animateScale: true
+        }
+    }
+};
+
+const impactDonutChart = new Chart(ctx, config);
 </script>
 
   <!-- FOOTER -->
