@@ -468,6 +468,28 @@ const impactDonutChart = new Chart(ctx, config);
   </a>
 
   <!-- Modification par Richarlin : premier commit -->
+<!-- Bouton retour en haut - Ajout par Richarlin -->
+<button id="backToTop" 
+        class="hidden fixed bottom-5 right-5 bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600 transition">
+  ↑ Haut
+</button>
+
+<script>
+  // Afficher le bouton quand on descend
+  const backToTop = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.classList.remove("hidden");
+    } else {
+      backToTop.classList.add("hidden");
+    }
+  });
+
+  // Action pour remonter en haut
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
 </body>
 </html>
